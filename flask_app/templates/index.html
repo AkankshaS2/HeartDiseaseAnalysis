@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Heart Disease Analysis</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<h1>Heart Disease Data Analysis Dashboard</h1>
+
+<div class="container">
+
+<div class="card">
+<h3>Total Patients</h3>
+<p>{{ stats.patients }}</p>
+</div>
+
+<div class="card">
+<h3>Heart Disease Cases</h3>
+<p>{{ stats.heart_cases }}</p>
+</div>
+
+<div class="card">
+<h3>Average BMI</h3>
+<p>{{ stats.avg_bmi }}</p>
+</div>
+
+<div class="card">
+<h3>Average Sleep</h3>
+<p>{{ stats.avg_sleep }}</p>
+</div>
+
+</div>
+
+<h2>Interactive Tableau Dashboard</h2>
+
+<iframe
+width="900"
+height="600"
+src="https://public.tableau.com/views/HeartDiseaseDashboard/Dashboard1?:showVizHome=no">
+</iframe>
+
+</body>
+</html>
