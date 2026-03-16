@@ -3,8 +3,8 @@ import pandas as pd
 
 app = Flask(__name__)
 
-# Load cleaned dataset
-df = pd.read_csv("../data/processed/cleaned_heart_data.csv")
+
+df = pd.read_csv("../heart_new.csv")
 
 @app.route("/")
 def dashboard():
